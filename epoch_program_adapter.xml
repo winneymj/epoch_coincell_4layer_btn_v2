@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:/Users/dell/Documents/KiCad/epoch_coincell_4layer/epoch_program_adapter.sch</source>
+    <date>10/2/2017 6:49:25 PM</date>
+    <tool>Eeschema 4.0.5</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>epoch_program_adapter.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>CONN_02X05</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm</footprint>
+      <libsource lib="conn" part="CONN_02X05"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59186D7D</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>CONN_01X05</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x05_Pitch1.27mm</footprint>
+      <libsource lib="conn" part="CONN_01X05"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5918759D</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>DMP1045U</value>
+      <footprint>TO_SOT_Packages_SMD:TSOT-23_HandSoldering</footprint>
+      <libsource lib="device" part="Q_PMOS_SGD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C6B7D3</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>LTC4412</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6_Handsoldering</footprint>
+      <libsource lib="epoch_program_adapter-cache" part="LTC4412"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C6B7D5</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C6B7D8</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>ZLLS410</value>
+      <footprint>Diodes_SMD:D_SOD-323_HandSoldering</footprint>
+      <libsource lib="device" part="D_Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C6B7DA</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MH2mm</value>
+      <footprint>my-fp-library:MH2.1mm</footprint>
+      <libsource lib="marks" part="MH2.1mm"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C82B2C</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MH2mm</value>
+      <footprint>my-fp-library:MH2.1mm</footprint>
+      <libsource lib="marks" part="MH2.1mm"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C82B4C</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="conn" part="CONN_01X05">
+      <description>Connector, single row, 01x05, pin header</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X05</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_02X05">
+      <description>Connector, double row, 02x05, pin header</description>
+      <footprints>
+        <fp>Pin_Header_Straight_2X*</fp>
+        <fp>Pin_Header_Angled_2X*</fp>
+        <fp>Socket_Strip_Straight_2X*</fp>
+        <fp>Socket_Strip_Angled_2X*</fp>
+        <fp>IDC_Header_Straight_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_02X05</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C_Small">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="epoch_program_adapter-cache" part="LTC4412">
+      <footprints>
+        <fp>MSOP*3x3mm*Pitch0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LTC4412</field>
+        <field name="Footprint">Housings_TSOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vin" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="CTL" type="input"/>
+        <pin num="4" name="STAT" type="openCol"/>
+        <pin num="5" name="GATE" type="output"/>
+        <pin num="6" name="SENSE" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="marks" part="MH2.1mm">
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MH2.1mm</field>
+      </fields>
+    </libpart>
+    <libpart lib="device" part="Q_PMOS_SGD">
+      <description>Transistor P-MOSFET with substrate diode (general)</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_PMOS_SGD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+    <library logical="marks">
+      <uri>C:\Users\dell\Documents\KiCad\marks.lib</uri>
+    </library>
+    <library logical="epoch_program_adapter-cache">
+      <uri>C:\Users\dell\Documents\KiCad\epoch_coincell_4layer\epoch_program_adapter-cache.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="(GND)">
+      <node ref="U1" pin="2"/>
+      <node ref="J1" pin="3"/>
+      <node ref="J1" pin="5"/>
+      <node ref="J2" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="2" name="SWDIO/+3.3V(REGUL)">
+      <node ref="J1" pin="2"/>
+      <node ref="U1" pin="6"/>
+      <node ref="D1" pin="2"/>
+      <node ref="J2" pin="4"/>
+    </net>
+    <net code="3" name="Net-(Q1-Pad2)">
+      <node ref="Q1" pin="2"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="4" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="5" name="+3V3">
+      <node ref="Q1" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="J2" pin="5"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="6" name="RESET">
+      <node ref="J2" pin="2"/>
+      <node ref="J1" pin="10"/>
+    </net>
+    <net code="7" name="Net-(J1-Pad9)">
+      <node ref="J1" pin="9"/>
+    </net>
+    <net code="8" name="Net-(J1-Pad8)">
+      <node ref="J1" pin="8"/>
+    </net>
+    <net code="9" name="Net-(J1-Pad7)">
+      <node ref="J1" pin="7"/>
+    </net>
+    <net code="10" name="Net-(J1-Pad6)">
+      <node ref="J1" pin="6"/>
+    </net>
+    <net code="11" name="SWDCLK/+3.3V(BATT)">
+      <node ref="U1" pin="1"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="J1" pin="4"/>
+      <node ref="J2" pin="3"/>
+    </net>
+  </nets>
+</export>

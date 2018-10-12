@@ -1,0 +1,9 @@
+Reference, Value, Footprint, Datasheet
+"J1","CONN_02X05","Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm",""
+"J2","CONN_01X05","Pin_Headers:Pin_Header_Straight_1x05_Pitch1.27mm",""
+"Q1","DMP1045U","TO_SOT_Packages_SMD:TSOT-23_HandSoldering",""
+"U1","LTC4412","TO_SOT_Packages_SMD:SOT-23-6_Handsoldering",""
+"C1","10uF","Capacitors_SMD:C_0805_HandSoldering",""
+"D1","ZLLS410","Diodes_SMD:D_SOD-323_HandSoldering",""
+"H1","MH2mm","my-fp-library:MH2.1mm",""
+"H2","MH2mm","my-fp-library:MH2.1mm",""
