@@ -1024,43 +1024,14 @@ Wire Wire Line
 Connection ~ 6650 1350
 Wire Wire Line
 	6650 950  6650 850 
-Wire Wire Line
-	4800 2300 4950 2300
-Text GLabel 5050 1250 2    60   Output ~ 0
-+3.3V(REGUL)
 Text GLabel 2550 4400 0    60   Input ~ 0
 SWDIO
 Wire Wire Line
 	8800 5500 9000 5500
 Wire Wire Line
 	8800 5600 9000 5600
-Text GLabel 4950 2300 2    60   Output ~ 0
-+3.3V(BATT)
 Text GLabel 2550 4500 0    60   Input ~ 0
 SWDCLK
-$Comp
-L CONN_01X02 J3
-U 1 1 5A087ADC
-P 10750 5550
-F 0 "J3" H 10750 5700 50  0000 C CNN
-F 1 "CONN_01X02" V 10850 5550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch1.27mm" H 10750 5550 50  0001 C CNN
-F 3 "" H 10750 5550 50  0001 C CNN
-	1    10750 5550
-	1    0    0    -1  
-$EndComp
-Text GLabel 10450 5500 0    60   Input ~ 0
-+3.3V(REGUL)
-Text GLabel 10450 5650 0    60   Input ~ 0
-+3.3V(BATT)
-Wire Wire Line
-	10550 5500 10450 5500
-Wire Wire Line
-	10550 5600 10500 5600
-Wire Wire Line
-	10500 5600 10500 5650
-Wire Wire Line
-	10500 5650 10450 5650
 $Comp
 L (GND) #PWR033
 U 1 1 5A77AE70
@@ -1128,4 +1099,26 @@ Wire Wire Line
 	5300 6750 5400 6750
 Wire Wire Line
 	5300 7100 5400 7100
+$Comp
+L (+3.3) #PWR034
+U 1 1 5BC006BD
+P 4800 2300
+F 0 "#PWR034" H 4800 2350 30  0001 C CNN
+F 1 "(+3.3)" H 4800 2400 50  0000 C CNN
+F 2 "" H 4800 2300 60  0000 C CNN
+F 3 "" H 4800 2300 60  0000 C CNN
+	1    4800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L (+3.3) #PWR035
+U 1 1 5BC00ACB
+P 5050 1250
+F 0 "#PWR035" H 5050 1300 30  0001 C CNN
+F 1 "(+3.3)" H 5050 1350 50  0000 C CNN
+F 2 "" H 5050 1250 60  0000 C CNN
+F 3 "" H 5050 1250 60  0000 C CNN
+	1    5050 1250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
