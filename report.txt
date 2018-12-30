@@ -1,0 +1,2 @@
+Plot: 'C:\Users\dell\Documents\KiCad\epoch_coincell_4layer_btn_v2\epoch.pdf' OK.
+
