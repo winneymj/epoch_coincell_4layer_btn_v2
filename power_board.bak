@@ -177,19 +177,6 @@ Wire Wire Line
 Wire Wire Line
 	6500 3650 6500 3800
 Connection ~ 6150 3400
-$Comp
-L Device:Q_PMOS_DGS Q1
-U 1 1 5C2824E1
-P 7100 3500
-AR Path="/5C2824E1" Ref="Q1"  Part="1" 
-AR Path="/5C2799D2/5C2824E1" Ref="Q1"  Part="1" 
-F 0 "Q1" H 7300 3550 50  0000 L CNN
-F 1 "DMP1045U" H 7300 3450 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 7300 3600 50  0001 C CNN
-F 3 "" H 7100 3500 50  0000 C CNN
-	1    7100 3500
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	3750 3400 3750 4050
 Wire Wire Line
@@ -329,7 +316,7 @@ F 4 "MCP73831T-2ACI/OT" H 5150 2500 50  0001 C CNN "MPN"
 F 5 "Microchip" H 5150 2400 50  0001 C CNN "Manuf"
 F 6 "Microchip MCP73831T-2ACI/OT" H 5150 2600 50  0001 C CNN "BOM"
 	1    5150 3200
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Connection ~ 5850 3350
 Wire Wire Line
@@ -385,9 +372,9 @@ $EndComp
 Wire Wire Line
 	4150 3000 4150 3250
 Text GLabel 3150 3400 0    50   Input ~ 0
-VSS
+VDD
 Text GLabel 2250 3650 2    50   Input ~ 0
-VSS
+VDD
 Text GLabel 8000 3050 2    50   Output ~ 0
 +5V
 Wire Wire Line
@@ -412,4 +399,32 @@ Wire Wire Line
 	2250 4050 2400 4050
 Wire Wire Line
 	2400 4050 2400 4200
+$Comp
+L marks:MH2.1mm H1
+U 1 1 5C3B8630
+P 8300 4500
+F 0 "H1" H 8400 4500 60  0001 C CNN
+F 1 "MH2.1mm" H 8300 4800 60  0001 C CNN
+F 2 "my-fp-library:MH2.1mm" H 8300 4500 60  0001 C CNN
+F 3 "" H 8300 4500 60  0001 C CNN
+	1    8300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 5C4DD92F
+P 7100 3500
+F 0 "Q1" V 7443 3500 50  0000 C CNN
+F 1 "Q_PMOS_GSD (DMP1045U)" V 7352 3500 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 7300 3600 50  0001 C CNN
+F 3 "~" H 7100 3500 50  0001 C CNN
+	1    7100 3500
+	0    -1   -1   0   
+$EndComp
+Text Label 6800 3400 0    50   ~ 0
+D
+Text Label 7350 3400 0    50   ~ 0
+S
+Text Label 7100 3800 0    50   ~ 0
+G
 $EndSCHEMATC
