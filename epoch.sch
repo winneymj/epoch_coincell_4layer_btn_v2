@@ -1076,7 +1076,7 @@ F 3 "" H 4550 1150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1200 1200 2    60   Output ~ 0
-VSS
+VDD
 $Comp
 L conn:CONN_01X05 J3
 U 1 1 5C2A6B80
@@ -1099,8 +1099,8 @@ F 3 "" H 2950 1850 60  0000 C CNN
 	1    2950 1850
 	-1   0    0    -1  
 $EndComp
-Text GLabel 2800 1250 2    60   Input ~ 0
-VSS
+Text GLabel 2800 1150 2    60   Input ~ 0
+VDD
 Text GLabel 2800 1350 2    60   Output ~ 0
 STAT
 Text GLabel 2800 1450 2    60   Output ~ 0
@@ -1108,24 +1108,24 @@ PWR_SENSE
 $Comp
 L power1:(+5) #PWR0102
 U 1 1 5C2AB633
-P 2950 950
-F 0 "#PWR0102" H 2950 1000 30  0001 C CNN
-F 1 "(+5)" H 2950 1050 50  0000 C CNN
-F 2 "" H 2950 950 60  0000 C CNN
-F 3 "" H 2950 950 60  0000 C CNN
-	1    2950 950 
+P 3300 950
+F 0 "#PWR0102" H 3300 1000 30  0001 C CNN
+F 1 "(+5)" H 3300 1050 50  0000 C CNN
+F 2 "" H 3300 950 60  0000 C CNN
+F 3 "" H 3300 950 60  0000 C CNN
+	1    3300 950 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2800 1550 2950 1550
 Wire Wire Line
 	2950 1550 2950 1850
-Wire Wire Line
-	2800 1150 2950 1150
-Wire Wire Line
-	2950 1150 2950 950 
 Text GLabel 3250 3500 2    60   Input ~ 0
 STAT
 Text GLabel 3250 3400 2    60   Input ~ 0
 PWR_SENSE
+Wire Wire Line
+	2800 1250 3300 1250
+Wire Wire Line
+	3300 1250 3300 950 
 $EndSCHEMATC
