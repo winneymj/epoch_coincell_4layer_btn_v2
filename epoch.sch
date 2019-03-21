@@ -1120,7 +1120,7 @@ Wire Wire Line
 	2800 1550 2950 1550
 Wire Wire Line
 	2950 1550 2950 1850
-Text GLabel 3250 3500 2    60   Input ~ 0
+Text GLabel 3250 3200 2    60   Input ~ 0
 STAT
 Text GLabel 3250 3400 2    60   Input ~ 0
 PWR_SENSE
@@ -1128,4 +1128,63 @@ Wire Wire Line
 	2800 1250 3300 1250
 Wire Wire Line
 	3300 1250 3300 950 
+$Comp
+L Device:R R8
+U 1 1 5C931DE5
+P 5400 3800
+F 0 "R8" V 5480 3800 50  0000 C CNN
+F 1 "10K" V 5400 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5330 3800 50  0001 C CNN
+F 3 "" H 5400 3800 50  0000 C CNN
+	1    5400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5C936340
+P 5400 3200
+F 0 "R7" V 5480 3200 50  0000 C CNN
+F 1 "10K" V 5400 3200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5330 3200 50  0001 C CNN
+F 3 "" H 5400 3200 50  0000 C CNN
+	1    5400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power1:(GND) #PWR0103
+U 1 1 5C93A935
+P 5400 4100
+F 0 "#PWR0103" H 5400 4100 30  0001 C CNN
+F 1 "(GND)" H 5400 4100 30  0001 C CNN
+F 2 "" H 5400 4100 60  0000 C CNN
+F 3 "" H 5400 4100 60  0000 C CNN
+	1    5400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3950 5400 4100
+$Comp
+L power1:(+5) #PWR0104
+U 1 1 5C93F074
+P 5400 2850
+F 0 "#PWR0104" H 5400 2900 30  0001 C CNN
+F 1 "(+5)" H 5400 2950 50  0000 C CNN
+F 2 "" H 5400 2850 60  0000 C CNN
+F 3 "" H 5400 2850 60  0000 C CNN
+	1    5400 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2850 5400 3050
+Wire Wire Line
+	5400 3350 5400 3500
+Text GLabel 3250 2900 2    60   Input ~ 0
+BATT_VOLT
+Text GLabel 5050 3500 0    60   Output ~ 0
+BATT_VOLT
+Wire Wire Line
+	5050 3500 5400 3500
+Connection ~ 5400 3500
+Wire Wire Line
+	5400 3500 5400 3650
 $EndSCHEMATC
